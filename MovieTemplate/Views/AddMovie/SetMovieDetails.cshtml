@@ -1,0 +1,40 @@
+﻿@model MovieTemplate.Models.MovieDets
+
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SetMovieDetails</title>
+</head>
+
+<body>
+<h1>Movie Details</h1>
+
+    <h3>@Model.movie_name</h3>
+    <h3>@Model.director</h3>
+    <h3>@Model.producer</h3>
+    <h3>@Model.cast</h3>
+    <h3>@Model.genre</h3>
+    <h3>@Model.duration</h3>
+
+    <table>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.movie_name)</th>
+            <th>@Html.DisplayNameFor(model => model.director)</th>
+            <th>@Html.DisplayNameFor(model => model.producer)</th>
+            <th>@Html.DisplayNameFor(model => model.cast)</th>
+            <th>@Html.DisplayNameFor(model => model.genre)</th>
+            <th>@Html.DisplayNameFor(model => model.duration)</th>
+        </tr>
+        
+
+</table>
+</body>
+</html>

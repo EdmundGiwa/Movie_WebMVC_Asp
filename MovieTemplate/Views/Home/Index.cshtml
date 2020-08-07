@@ -1,0 +1,382 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<style>
+
+    .h1{
+        color:#666 !important;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size:25px !important;
+    }
+    .slogan{
+        text-align:center;
+        font-size:17px;
+    }
+   .pimg1{
+           position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*
+    fixed = parralax effect
+    scroll = normal
+*/
+    background-attachment: fixed;
+   }
+.pimg2,
+.pimg3,
+.pimg4,
+.pimg5,
+.pimg6,
+.pimg7,
+.pimg8,
+.pimg9,
+.pimg10 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*
+    fixed = parralax effect
+    scroll = normal
+*/
+    background-attachment: fixed;
+}
+
+   
+.pimg1 {
+    background-image: url("../../image/slider-bg2.jpg");
+    min-height: 100vh !important;
+}
+.pimg2 {
+      background-image: url("../../image/bad-boys-for-life.jpg");
+    min-height: 400px;
+}
+.pimg3 {
+    background-image: url("../../image/the-spongebob-movie-sponge-on-the-run-8k-qh-3840x2160.jpg");
+    min-height: 400px;
+}
+.pimg4 {
+  background-image: url("../../image/rick-and-morty-fanart-4k-zt-3840x2160.jpg");
+    min-height: 400px;
+}
+.pimg5 {
+    background-image: url("../../image/john-wick-1280x720-2015-movie-film-gun-blue-green-weapon-keanu-2161.jpg");
+    min-height: 400px;
+}
+.pimg6 {
+    background-image: url("../../image/spiderman.jpg");
+    min-height: 400px;
+}
+.pimg7 {
+    background-image: url("../../image/harley-quinn-1920x1080-suicide-squad-margot-robbie-best-movies-of-2016-12104.jpg");
+    min-height: 400px;
+}
+.pimg8 {
+    background-image: url("../../image/Tomb-Raider.jpg");
+    min-height: 400px;
+}
+.pimg9 {
+    background-image: url("../../image/vikings-1920x1080-4-season-travis-fimmel-katheryn-winnick-best-tv-9671.jpg");
+    min-height: 400px;
+}
+.pimg10 {
+    background-image: url("../../image/avengers-endgame-3203x1872-avengers-4-hd-16872.jpg");
+    min-height: 400px;
+}
+.bottom-right_one {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    width: 20%;
+    border-radius: 10px;
+}
+.bottom-right_one p{
+    font-size:16px;
+    font-family: 'Comic Sans MS';
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+.section-light {
+    background-color: #f4f4f4;
+    color: #666;
+}
+.section-dark {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.ptext .border {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+.ptext .border.trans {
+    background-color: transparent;
+}
+.button{
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #10161f;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: segoe ui light;
+    font-size: 15px;
+    transition:1s;
+    cursor: grab;
+    margin: 5px;
+      padding :5px 15px 5px 15px;
+    border-radius: 30px;
+}
+.button:hover{
+padding: 5px 40px 5px 40px;
+}
+</style>
+
+
+<!--
+<div class="jumbotron">
+    <h1 class="h1">Welcome :)</h1>
+    <p class="lead">Wel.come to "</p>
+    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>
+
+     -->
+
+<div class="pimg1">
+    <div class="ptext">
+      <img src="~/image/logo.png"/>
+    </div>
+</div>
+
+<section class="section section-light">
+    <h2>Welcome :)</h2>
+    <p class="slogan">
+      Yo, what's up.....Welcome to the amazing world of Movies get the chance to view your latest block bursters
+        with an amazing thrilling sensation from the tip of your fingers, from Movies to Series anything you want more <br />
+        <span>E D D I E says so *winks*</span>
+    </p>
+</section>
+
+<div class="pimg2">
+    <div class="ptext">
+        <span class="border trans">
+           Bad Boys
+        </span>
+    </div>
+    <div class="bottom-right_one">
+        <p>Action</p>
+    </div>
+</div>
+
+<section class="section section-dark">
+    <h2>Bad Boys</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora placeat minus fugiat illum fugit ad aliquid, natus doloremque ducimus obcaecati dolore quas expedita illo laborum facilis sit velit asperiores distinctio necessitatibus doloribus cupiditate odit aut, nisi et eligendi. Quaerat fugiat ullam quod voluptates corrupti nesciunt atque eligendi, aut adipisci, officiis ex fuga ea quos! Tempore quo, itaque deleniti. Officiis, recusandae. Aperiam esse atque corrupti voluptates voluptatibus, eos. Sit laudantium vero amet. Cumque est expedita nemo dignissimos illum
+    </p>
+    <button class="button" style="vertical-align:middle">
+        <span>More Info...</span>
+    </button>
+</section>
+
+<div class="pimg3">
+    <div class="ptext">
+        <span class="border trans">
+          Spongebob 
+        </span>
+    </div>
+    <div class="bottom-right_one">
+        <p>Animation</p>
+    </div>
+</div>
+
+<section class="section section-light">
+    <h2>  Spongebob </h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora placeat minus fugiat illum fugit ad aliquid, natus doloremque ducimus obcaecati dolore quas expedita illo laborum facilis sit velit asperiores distinctio necessitatibus doloribus cupiditate odit aut, nisi et eligendi. Quaerat fugiat ullam quod voluptates corrupti nesciunt atque eligendi, aut adipisci, officiis ex fuga ea quos! Tempore quo, itaque deleniti. Officiis, recusandae. Aperiam esse atque corrupti voluptates voluptatibus, eos. Sit laudantium vero amet. Cumque est expedita nemo dignissimos illum
+    </p>
+    <button class="button" style="vertical-align:middle">
+        <span>More Info...</span>
+    </button>
+</section>
+
+<div class="pimg4">
+    <div class="ptext">
+        <span class="border trans">
+           Rick &Aacute; Morty 
+        </span>
+    </div>
+    <div class="bottom-right_one">
+        <p>Animation</p>
+    </div>
+</div>
+<section class="section section-dark">
+    <h2>   Rick &Aacute; Morty </h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora placeat minus fugiat illum fugit ad aliquid, natus doloremque ducimus obcaecati dolore quas expedita illo laborum facilis sit velit asperiores distinctio necessitatibus doloribus cupiditate odit aut, nisi et eligendi. Quaerat fugiat ullam quod voluptates corrupti nesciunt atque eligendi, aut adipisci, officiis ex fuga ea quos! Tempore quo, itaque deleniti. Officiis, recusandae. Aperiam esse atque corrupti voluptates voluptatibus, eos. Sit laudantium vero amet. Cumque est expedita nemo dignissimos illum
+    </p>
+    <button class="button" style="vertical-align:middle">
+        <span>More Info...</span>
+    </button>
+</section>
+
+<div class="pimg5">
+    <div class="ptext">
+        <span class="border trans">
+            John Wick
+        </span>
+    </div>
+    <div class="bottom-right_one">
+        <p>Action</p>
+    </div>
+</div>
+<section class="section section-light">
+    <h2>John Wick</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora placeat minus fugiat illum fugit ad aliquid, natus doloremque ducimus obcaecati dolore quas expedita illo laborum facilis sit velit asperiores distinctio necessitatibus doloribus cupiditate odit aut, nisi et eligendi. Quaerat fugiat ullam quod voluptates corrupti nesciunt atque eligendi, aut adipisci, officiis ex fuga ea quos! Tempore quo, itaque deleniti. Officiis, recusandae. Aperiam esse atque corrupti voluptates voluptatibus, eos. Sit laudantium vero amet. Cumque est expedita nemo dignissimos illum
+    </p>
+    <button class="button" style="vertical-align:middle">
+        <span>More Info...</span>
+    </button>
+</section>
+
+<div class="pimg6">
+    <div class="ptext">
+        <span class="border trans">
+           Spiderman Homecoming
+        </span>
+    </div>
+    <div class="bottom-right_one">
+        <p>Action Comedy</p>
+    </div>
+</div>
+<section class="section section-dark">
+    <h2>Spiderman Homecoming</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora placeat minus fugiat illum fugit ad aliquid, natus doloremque ducimus obcaecati dolore quas expedita illo laborum facilis sit velit asperiores distinctio necessitatibus doloribus cupiditate odit aut, nisi et eligendi. Quaerat fugiat ullam quod voluptates corrupti nesciunt atque eligendi, aut adipisci, officiis ex fuga ea quos! Tempore quo, itaque deleniti. Officiis, recusandae. Aperiam esse atque corrupti voluptates voluptatibus, eos. Sit laudantium vero amet. Cumque est expedita nemo dignissimos illum
+    </p>
+    <button class="button" style="vertical-align:middle">
+        <span>More Info...</span>
+    </button>
+</section>
+
+<div class="pimg7">
+    <div class="ptext">
+        <span class="border trans">
+           HerleyQuin
+        </span>
+    </div>
+    <div class="bottom-right_one">
+        <p>Action Comedy</p>
+    </div>
+</div>
+<section class="section section-light">
+    <h2>  HerleyQuin</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora placeat minus fugiat illum fugit ad aliquid, natus doloremque ducimus obcaecati dolore quas expedita illo laborum facilis sit velit asperiores distinctio necessitatibus doloribus cupiditate odit aut, nisi et eligendi. Quaerat fugiat ullam quod voluptates corrupti nesciunt atque eligendi, aut adipisci, officiis ex fuga ea quos! Tempore quo, itaque deleniti. Officiis, recusandae. Aperiam esse atque corrupti voluptates voluptatibus, eos. Sit laudantium vero amet. Cumque est expedita nemo dignissimos illum
+    </p>
+    <button class="button" style="vertical-align:middle">
+        <span>More Info...</span>
+    </button>
+</section>
+
+<div class="pimg8">
+    <div class="ptext">
+        <span class="border trans">
+            Tomb Raider
+        </span>
+    </div>
+    <div class="bottom-right_one">
+        <p>Adventure</p>
+    </div>
+</div>
+<section class="section section-dark">
+    <h2> Tomb Raider</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora placeat minus fugiat illum fugit ad aliquid, natus doloremque ducimus obcaecati dolore quas expedita illo laborum facilis sit velit asperiores distinctio necessitatibus doloribus cupiditate odit aut, nisi et eligendi. Quaerat fugiat ullam quod voluptates corrupti nesciunt atque eligendi, aut adipisci, officiis ex fuga ea quos! Tempore quo, itaque deleniti. Officiis, recusandae. Aperiam esse atque corrupti voluptates voluptatibus, eos. Sit laudantium vero amet. Cumque est expedita nemo dignissimos illum
+    </p>
+    <button class="button" style="vertical-align:middle">
+        <span>More Info...</span>
+    </button>
+</section>
+
+<div class="pimg9">
+    <div class="ptext">
+        <span class="border trans">
+           Vikings
+        </span>
+    </div>
+    <div class="bottom-right_one">
+        <p>Action Series</p>
+    </div>
+</div>
+<section class="section section-light">
+    <h2>Vikings</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora placeat minus fugiat illum fugit ad aliquid, natus doloremque ducimus obcaecati dolore quas expedita illo laborum facilis sit velit asperiores distinctio necessitatibus doloribus cupiditate odit aut, nisi et eligendi. Quaerat fugiat ullam quod voluptates corrupti nesciunt atque eligendi, aut adipisci, officiis ex fuga ea quos! Tempore quo, itaque deleniti. Officiis, recusandae. Aperiam esse atque corrupti voluptates voluptatibus, eos. Sit laudantium vero amet. Cumque est expedita nemo dignissimos illum
+    </p>
+    <button class="button" style="vertical-align:middle">
+        <span>More Info...</span>
+    </button>
+</section>
+
+<div class="pimg10">
+    <div class="ptext">
+        <span class="border trans">
+            Avengers 
+        </span>
+    </div>
+    <div class="bottom-right_one">
+        <p>Action</p>
+    </div>
+</div>
+<section class="section section-dark">
+    <h2>Avengers</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora placeat minus fugiat illum fugit ad aliquid, natus doloremque ducimus obcaecati dolore quas expedita illo laborum facilis sit velit asperiores distinctio necessitatibus doloribus cupiditate odit aut, nisi et eligendi. Quaerat fugiat ullam quod voluptates corrupti nesciunt atque eligendi, aut adipisci, officiis ex fuga ea quos! Tempore quo, itaque deleniti. Officiis, recusandae. Aperiam esse atque corrupti voluptates voluptatibus, eos. Sit laudantium vero amet. Cumque est expedita nemo dignissimos illum
+    </p>
+    <button class="button" style="vertical-align:middle">
+        <span>More Info...</span>
+    </button>
+</section>
